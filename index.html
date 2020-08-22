@@ -9,6 +9,7 @@
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
 	</style>
+	<link href="css/particles.css" type="text/css" rel="stylesheet">
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
@@ -16,15 +17,20 @@
 </head>
 
 <body>
+	<div id="particles-js"></div>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script>
+		particlesJS.load('particles-js', 'js/particles.json', () => {console.log("particle loaded")});
+	</script> 
 	<div id="mainDiv">
 		<div id="content">
-			<div id="code">
-<!-- 				<span class="comments">/**</span><br />
+			<!-- <div id="code">
+				<span class="comments">/**</span><br />
 				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
 				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Gigi"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Kiki"</span>);<br />
 				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
 				i.love(u);<br />
 				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
@@ -44,8 +50,8 @@
 				}<br />
 				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
 				i.marry(u);<br />
-				i.liveHappilyWith(u);<br /> -->
-			</div>
+				i.liveHappilyWith(u);<br />
+			</div> -->
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
@@ -60,9 +66,9 @@
 				</div>
 			</div>
 		</div>
-<!-- 		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
+		<!-- <div id="copyright">
+			Based on <a href="'http://hackerzhou.me">FlowerPower</a> project.<br />
+			Copyright © 2020 <a href='http://czahie.me'>hackerzhou.me</a> 
 		</div> -->
 	</div>
 	<script type="text/javascript">
